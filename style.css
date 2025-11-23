@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('assets/images/background.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+    width: min(95%, 600px);
+    padding: 4vw 3vw;
+}
+
+.header {
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: clamp(24px, 6vw, 40px);
+    color: #ffffff;
+}
+
+.subtitle {
+    color: #A8A9AD;
+    font-size: clamp(12px, 3.5vw, 20px);
+}
+
+.input-box {
+    display: flex;
+    gap: 1rem;
+    margin: 20px 0;
+}
+
+input {
+    flex: 1;
+    padding: 14px;
+    border-radius: 12px;
+    border: 1px solid #bbb;
+    font-size: 18px;
+}
+
+button {
+    padding: 14px 20px;
+    border-radius: 12px;
+    border: none;
+    background: #3a7bff;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.result-box {
+    width: 100%;
+    background: rgba(255,255,255,0.8);
+    padding: 20px;
+    border-radius: 12px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.guess-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.guess-item:last-child {
+    border-bottom: none;
+}
+
+.word {
+    font-weight: bold;
+}
+
+.correct {
+    color: #00c851;
+    font-weight: bold;
+}
